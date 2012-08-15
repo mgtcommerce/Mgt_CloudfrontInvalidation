@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout>
+    <adminhtml_cache_index>
+        <reference name="cache.additional">
+            <block type="mgt_cloudfront_invalidation_adminhtml/invalidate" name="mgt_cloudfront_invalidation_invalidate" template="mgt_cloudfront_invalidation/invalidate.phtml" />
+        </reference>
+    </adminhtml_cache_index>
+</layout>

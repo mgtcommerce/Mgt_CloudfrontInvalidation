@@ -1,0 +1,27 @@
+<?php 
+
+$isEnabled = $this->isEnabled();
+
+?>
+<?php if ($isEnabled): ?>
+
+<?php $helper = Mage::helper('mgt_cloudfront_invalidation'); ?>
+
+<form action="<?php echo $this->getInvalidationUrl(); ?>" method="get">
+<table class="form-list">
+  <tr>
+    <td class="scope-label">
+      <h3><?php echo $helper->__('Mgt Amazon Cloudfront File Invalidation'); ?></h3>
+      <textarea name="invalidation_path" cols="75" rows="6"></textarea> <br>
+      <?php echo $helper->__('Separate multiple paths using a comma e.g /media/mgt_logo.png,/media/catalog/product/shoe.jpg')?>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <button type="submit" class="scalable"><span><?php echo $helper->__('Submit') ?></span></button>
+    </td>
+  </tr>
+</table>
+</form>
+
+<?php endif ?>
