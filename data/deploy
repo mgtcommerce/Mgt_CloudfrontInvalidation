@@ -1,2 +1,2 @@
 #!/bin/bash
-/usr/bin/php /var/www/Wee_Module_Deployment/htdocs/wee.php deploy /var/www/Mgt_CloudfrontInvalidation Mgt_CloudfrontInvalidation_1.0.0 /var/www/Mgt_CloudfrontInvalidation/data/
+/usr/bin/php /var/www/Wee_Module_Deployment/htdocs/wee.php deploy /var/www/Mgt_CloudfrontInvalidation Mgt_CloudfrontInvalidation_1.5.x_1.7.x_1.0.0 /var/www/Mgt_CloudfrontInvalidation/data/
