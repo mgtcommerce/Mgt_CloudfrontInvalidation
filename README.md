@@ -1,4 +1,4 @@
-### Welcome to the Mgt Amazon Cloudfront File Invalidation Extension for Magento 1.5.x - 1.7.x
+### Welcome to the Mgt Amazon Cloudfront File Invalidation Extension for Magento 1.5.x - 1.9.x
 
 With our Mgt Amazon Cloudfront File Invalidation Extension for Magento you can easily invalidate single files 
 or paths from amazon's cloudfront CDN.
