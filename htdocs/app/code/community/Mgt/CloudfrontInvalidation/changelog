@@ -1,2 +1,6 @@
+1.0.1 Stefan Wieczorek <stefan.wieczorek@mgt-commerce.com>
+Disable cdn skin,js and media url in backend
+Add query suffix to css and js file in frontend to prevent invalidates every time
+
 1.0.0 Stefan Wieczorek <stefan.wieczorek@mgt-commerce.com>
 Initial release

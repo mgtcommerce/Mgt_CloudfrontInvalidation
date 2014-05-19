@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Mgt_CloudfrontInvalidation>
-            <version>1.0.0</version>
+            <version>1.0.1</version>
         </Mgt_CloudfrontInvalidation>
     </modules>
     <global>
@@ -13,6 +13,11 @@
             <mgt_cloudfront_invalidation_adminhtml>
                 <class>Mgt_CloudfrontInvalidation_Block_Adminhtml</class>
             </mgt_cloudfront_invalidation_adminhtml>
+            <page>
+                <rewrite>
+                   <html_head>Mgt_CloudfrontInvalidation_Block_Page_Html_Head</html_head>
+                </rewrite>
+            </page>
         </blocks>
         <models>
             <mgt_cloudfront_invalidation>
@@ -55,6 +60,16 @@
                 </mgt_cloudfront_invalidation>
             </updates>
         </layout>
+        <events>
+            <controller_action_predispatch_adminhtml>
+                <observers>
+                    <mgt_cloudfront_invalidation>
+                        <class>mgt_cloudfront_invalidation/observer</class>
+                        <method>modifyBaseUrl</method>
+                    </mgt_cloudfront_invalidation>
+                </observers>
+            </controller_action_predispatch_adminhtml>
+        </events>
     </adminhtml>
     <admin>
         <routers>
