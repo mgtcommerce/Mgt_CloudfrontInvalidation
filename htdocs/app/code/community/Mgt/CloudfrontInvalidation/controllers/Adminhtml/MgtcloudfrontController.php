@@ -26,7 +26,7 @@ class Mgt_CloudfrontInvalidation_Adminhtml_MgtcloudfrontController extends Mage_
     public function invalidateAction()
     {
         $params = new Varien_Object($this->getRequest()->getParams());
-        if ($params->getKey() && ($invalidationPath = $params->getInvalidationPath())) {
+        if ($invalidationPath = $params->getInvalidationPath()) {
             $invalidationPath = explode(',', trim($invalidationPath));
             
             $cloudFront = Mage::getModel('mgt_cloudfront_invalidation/cloudfront');
