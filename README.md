@@ -9,7 +9,7 @@ File Invalidation can also be helpful in the event that offensive or potentially
 
 * copy all files to your magento installation
 * Clear the cache in Admin -> System -> Cache Management 
-* Go to Admin -> System -> Con!guration -> MGT-COMMERCE.COM -> Cloudfront Invalidation -> Settings -> Active -> Yes
+* Go to Admin -> System -> Configuration -> MGT-COMMERCE.COM -> Cloudfront Invalidation -> Settings -> Active -> Yes
 * Enable Debug Mode to see the response from Cloudfront API (recommended)
 * Enter your Contribution ID, AWS Access Key and AWS Secret key (See images below)
 * Have fun and give Feedback
